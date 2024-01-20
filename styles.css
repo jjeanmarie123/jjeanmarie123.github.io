@@ -28,16 +28,15 @@ a {
 }
 
 a:link {
-    color: yellow
+    color: blue
 }
 
 a:visited {
-    color: blue;
+    color: purple;
 }
 
 a:hover {
     background-color: blueviolet;
-    border: 1px black solid;
     color: gold;
 
 }
