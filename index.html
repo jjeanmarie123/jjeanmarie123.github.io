@@ -1,9 +1,316 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheatsheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <h1>Joey Jean-Marie</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <div class="header">
+        <h1>HTML Cheatsheet Reference</h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="#html">HTML Tags</a></li>
+                <li><a href="#table">Table Tags</a></li>
+                <li><a href="#semantic">Semantic HTML Tags</a></li>
+                <li><a href="#attributes">HTML Attributes</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <h2>HTML Tags</h2>
+        <p>HTML tags are like keywords which defines that how web browser will format and display the content.</p>
+    </div>
+    <div>
+        <h3 id="html">Common HTML Tags</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="code">&lt;html&gt;</td>
+                    <td>HTML</td>
+                    <td>Represents the root (top-level element) of an HTML document.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;head&gt;</td>
+                    <td>Head</td>
+                    <td>Contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;title&gt;</td>
+                    <td>Title</td>
+                    <td>Defines the document's title that is shown in a browser's title bar or a page's tab.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;body&gt;</td>
+                    <td>Body</td>
+                    <td>Represents the content of an HTML document.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;h1...h6&gt;</td>
+                    <td>Heading 1 through 6</td>
+                    <td>Represent six levels of section headings. &lt;h1&gt; is the highest section level and &lt;h6&gt; is the lowest.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;img&gt;</td>
+                    <td>Image</td>
+                    <td>Embeds an image into the document.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;ul&gt; & &lt;ol&gt;</td>
+                    <td>Unordered List and Ordered List</td>
+                    <td>Represents an unordered and ordered list of items — typically rendered as a numbered list while the latter is as a bulleted list.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;li&gt;</td>
+                    <td>List Item</td>
+                    <td>Represents an item in a list.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;p&gt;</td>
+                    <td>Paragraph</td>
+                    <td>Represents a paragraph.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;a&gt;</td>
+                    <td>Anchor</td>
+                    <td>Creates a hyperlink.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;div&gt;</td>
+                    <td>Division</td>
+                    <td>The generic container for flow content.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;span&gt;</td>
+                    <td>Span</td>
+                    <td>A generic inline container for phrasing content.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h3 id="table">HTML Table Tags</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="code">&lt;table&gt;</td>
+                    <td>Table</td>
+                    <td>Represents tabular data.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;tbody&gt;</td>
+                    <td>Table Body</td>
+                    <td>Encapsulates a set of table rows.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;thead&gt;</td>
+                    <td>Table Header</td>
+                    <td>Defines a set of rows defining the head of the columns of the table.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;tfoot&gt;</td>
+                    <td>Table Footer</td>
+                    <td>Defines a set of rows summarizing the columns of the table.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;td&gt;</td>
+                    <td>Table Data</td>
+                    <td>Defines a cell of a table that contains data.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;th&gt;</td>
+                    <td>Table Head</td>
+                    <td>Defines a cell as a header of a group of table cells.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;tr&gt;</td>
+                    <td>Table Row</td>
+                    <td>Defines a row of cells in a table.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h3 id="semantic">Semantic HTML Tags</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="code">&lt;article&gt;</td>
+                    <td>Article</td>
+                    <td>Represents a self-contained composition in a document, page, application, or site.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;aside&gt;</td>
+                    <td>Aside</td>
+                    <td>Represents a portion of a document whose content is only indirectly related to the document's main content.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;footer&gt;</td>
+                    <td>Footer</td>
+                    <td>Represents a footer.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;header&gt;</td>
+                    <td>Header</td>
+                    <td>Represents introductory content.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;nav&gt;</td>
+                    <td>Navigation</td>
+                    <td>Represents a section of a page whose purpose is to provide navigation links.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;main&gt;</td>
+                    <td>Main</td>
+                    <td>Represents the dominant content of the body of a document.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;section&gt;</td>
+                    <td>Section</td>
+                    <td>Represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;figure&gt;</td>
+                    <td>Figure</td>
+                    <td>Represents self-contained content, potentially with an optional caption.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;figcaption&gt;</td>
+                    <td>Figure Caption</td>
+                    <td>Represents a caption or legend describing the rest of the contents of its parent &lt;figure&gt; element.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;video&gt;</td>
+                    <td>Video</td>
+                    <td>Embeds a media player which supports video playback into the document.</td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;audio&gt;</td>
+                    <td>Audio</td>
+                    <td>Used to embed sound content in documents.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h2>HTML Attributes</h2>
+        <p></p>
+    </div>
+    <div>
+        <h3 id="attributes">Common HTML Attributes</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Belongs To</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="code">class</td>
+                    <td>Global Attribute</td>
+                    <td>Often used with CSS to style elements with common properties.</td>
+                </tr>
+                <tr>
+                    <td class="code">id</td>
+                    <td>Global Attribute</td>
+                    <td>Defines a unique identifier (ID) which must be unique in the whole document.</td>
+                </tr>
+                <tr>
+                    <td class="code">style</td>
+                    <td>Global Attribute</td>
+                    <td>Contains CSS styling declarations to be applied to the element.</td>
+                </tr>
+                <tr>
+                    <td class="code">alt</td>
+                    <td>&lt;area&gt;, &lt;img&gt;, &lt;input&gt;</td>
+                    <td>Alternative text in case an image can't be displayed.</td>
+                </tr>
+                <tr>
+                    <td class="code">colspan</td>
+                    <td>&lt;td&gt;, &lt;th&gt;</td>
+                    <td>The colspan attribute defines the number of columns a cell should span.</td>
+                </tr>
+                <tr>
+                    <td class="code">rowspan</td>
+                    <td>&lt;td&gt;, &lt;th&gt;</td>
+                    <td>Defines the number of rows a table cell should span over.</td>
+                </tr>
+                <tr>
+                    <td class="code">target</td>
+                    <td>&lt;a&gt;, &lt;area&gt;, &lt;base&gt;, &lt;form&gt;</td>
+                    <td>Specifies where to open the linked document.</td>
+                </tr>
+                <tr>
+                    <td class="code">href</td>
+                    <td>&lt;a&gt;, &lt;area&gt;, &lt;base&gt;, &lt;link&gt;</td>
+                    <td>The URL of a linked resource.</td>
+                </tr>
+                <tr>
+                    <td class="code">rel</td>
+                    <td>&lt;a&gt;, &lt;area&gt;, &lt;link&gt;</td>
+                    <td>Specifies the relationship of the target object to the link object.</td>
+                </tr>
+                <tr>
+                    <td class="code">src</td>
+                    <td>&lt;audio&gt;, &lt;embed&gt;, &lt;img&gt;, &lt;video&gt;</td>
+                    <td>The URL of the embeddable content.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <div>
+        <h2>CSS Properties</h2>
+    </div>
+    <div>
+        <h3>Styling Text</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>font-family</td>
+                    <td>font-size</td>
+                    <td>font-weight</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+    <div>
+        <h4>Contact Information</h4>
+        <ul>
+            <li>Made By: Joey Jean-Marie</li>
+            <li>Email: joeyj********@*****.com</li>
+            <li>Phone: (***) ***-****</li>
+        </ul>
+    </div>
 </body>
-
 </html>
